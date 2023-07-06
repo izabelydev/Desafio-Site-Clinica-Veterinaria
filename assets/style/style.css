@@ -65,6 +65,10 @@ ul {
     z-index: 0;
 }
 
+.content-page-about {
+    background-color: #fff;
+}
+
 .content-main {
     backdrop-filter: blur(15px);
     color: #7758D9;
@@ -78,9 +82,21 @@ ul {
     border-radius: 15px;
 }
 
+.content-main-page-about {
+    max-width: 25%;
+    height: 50%;
+    margin: 0 45% 0 0;
+    border: none;
+}
+
 .content img {
     position: relative;
     max-width: 100%;
+}
+
+.content .img-page-about {
+    max-width: 61.5%;
+    margin-left: 38%;
 }
 
 .footer {
