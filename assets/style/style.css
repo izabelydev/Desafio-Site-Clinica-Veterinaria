@@ -24,7 +24,7 @@ ul {
     width: 85%;
 }
 .menu {
-    width: 15%;
+    width: 20%;
     background-color: #5c40b9;
     color: #fff;
     padding: 10px 20px 0px;
@@ -57,7 +57,7 @@ ul {
     padding: 0 20px;
 }
 .content {
-    background: #C38D94;
+    background: #fff;
     min-height: 380px;
     display: flex;
     align-items: center;
@@ -85,7 +85,7 @@ ul {
 .content-main-page-about {
     max-width: 25%;
     height: 50%;
-    margin: 0 45% 0 0;
+    margin: 0 40% 0 0;
     border: none;
 }
 
