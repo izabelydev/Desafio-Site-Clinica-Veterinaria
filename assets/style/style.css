@@ -12,6 +12,42 @@ ul {
     padding-left: 20px;
 }
 
+table {
+    backdrop-filter: blur(10px);
+    border: 1px solid #5c40b9;
+    border-collapse: collapse;
+}
+
+table caption {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 800;
+    color: #5c40b9;
+}
+
+table tr th {
+    font-size: 14.5px;
+    color: #fff;
+    background-color: #5c40b9;
+    border: 1px solid #5c40b9;
+    padding: 3px 5px;
+}
+
+table tr td {
+    font-size: 13px;
+    padding: 5px;
+}
+
+table tr:nth-child(odd) {
+    background-color: #7473be50;
+}
+
+table tr:hover {
+    color: #fff;
+    background-color: #5c40b9;
+    cursor: pointer;
+}
+
 .wrapper {
     width: 1200px;
     display: flex;
@@ -136,12 +172,16 @@ div.section:hover {
 
 .table-wrapper {
     position: absolute;
-    width: 700px;
+    width: 800px;
     height: 400px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
+}
+
+.price-table {
+    margin-right: 10%;
 }
 
 .footer {
@@ -177,6 +217,8 @@ div.section:hover {
     background: transparent;
     border: none;
     color: #fff;
+    font-size: 15px;
+    font-weight: 600;
     cursor: pointer;
 }
 
