@@ -48,6 +48,24 @@ table tr:hover {
     cursor: pointer;
 }
 
+textarea {
+    grid-column: span 2;
+}
+
+form input,
+form textarea {
+    margin: 10px;
+    padding: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: 1px solid #5c40b9;
+    border-radius: 5px;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+    color: #4e2ac5;
+}
+
 .wrapper {
     width: 1200px;
     display: flex;
@@ -87,6 +105,7 @@ table tr:hover {
 .header {
     background-color: #7473be;
     color: white;
+    font-weight: 600;
     min-height: 50px;
     display: flex;
     align-items: center;
@@ -112,10 +131,23 @@ table tr:hover {
     position: absolute;
     z-index: 1;
     margin-right: -43%;
-    padding: 30px;
+    padding: 10px 30px;
     max-width: 300px;
     border: 1px solid #7758D9;
     border-radius: 15px;
+}
+
+.map-content {
+    margin-right: -38%;
+    max-width: 350px;
+    border: none;
+}
+
+.map-content iframe {
+    -webkit-box-shadow: 0px 0px 24px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 24px -4px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 24px -4px rgba(0,0,0,0.75);
+    border-radius: 10px;
 }
 
 div.section {
@@ -184,6 +216,39 @@ div.section:hover {
     margin-right: 10%;
 }
 
+.form-wrapper {
+    backdrop-filter: blur(15px);
+    padding: 10px 30px 15px;
+    border: 1px solid #4e2ac5;
+    border-radius: 10px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    color: #4e2ac5;
+}
+
+.form-wrapper h1 {
+    font-size: 39px;
+}
+
+.form-wrapper form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.map-visit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.map-visit span {
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
 .footer {
     background-color: #000000;
     color: #fff;
@@ -199,7 +264,8 @@ div.section:hover {
     margin: 0 auto;
 }
 
-.foorter-btn {
+.foorter-btn,
+.btn-send {
     display: flex;
     align-items: center;
     background-color: #7758D9;
@@ -213,7 +279,8 @@ div.section:hover {
     border: .5px solid #fff;
 }
 
-.foorter-btn button {
+.foorter-btn button, 
+.btn-send button {
     background: transparent;
     border: none;
     color: #fff;
@@ -222,10 +289,20 @@ div.section:hover {
     cursor: pointer;
 }
 
-.foorter-btn button a {
+.foorter-btn button a,
+.btn-send span {
     color: #fff;
     cursor: pointer;
     text-decoration: none;
+}
+
+div.btn-send {
+    padding: 5px 20px;
+    margin-left: 34%;
+}
+
+.btn-send:hover {
+    background-color: #846bd6;
 }
 
 .material-symbols-outlined {
